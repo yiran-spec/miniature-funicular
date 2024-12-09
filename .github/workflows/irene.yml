@@ -1,12 +1,12 @@
 on: push
-
+    
 jobs:
-  job1:
-    tuns-on: ubuntu-latest
+   jobs1:
+    runs-on: ubuntu-latest
     steps:
       - run: pwd
       - run: ls
-  job2: 
+   job2: 
     runs-on: macos-latest
     steps:
       - run: echo "Hello, World!"
