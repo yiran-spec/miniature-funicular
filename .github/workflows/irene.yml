@@ -4,10 +4,4 @@ jobs:
    jobs1:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
-   job2: 
-    runs-on: macos-latest
-    steps:
-      - run: echo "Hello, World!"
-      - run: node --version
+      - run: bash main.sh
