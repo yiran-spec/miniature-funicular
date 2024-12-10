@@ -1,11 +1,13 @@
 on:
   schedule:
-    - cron: "0/1 * * * *" 
-    
+    - cron: "30 11 * * *"
+
 jobs:
-   jobs1:
-    runs-on: ubuntu-latest
+  jobs1:
+    runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set execute permission for main.sh
+        run: chmod +x main.sh
       - run: bash main.sh
