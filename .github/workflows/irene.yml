@@ -10,4 +10,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Set execute permission for main.sh
         run: chmod +x main.sh
+        working-directory: /Users/loctek/code/Irene/miniature-funicular/main.sh   
       - run: bash main.sh
+        working-directory: /Users/loctek/code/Irene/miniature-funicular/main.sh
